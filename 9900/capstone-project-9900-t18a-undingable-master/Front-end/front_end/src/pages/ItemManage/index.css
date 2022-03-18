@@ -1,0 +1,33 @@
+.item-manage-container{
+    display: flex;
+    margin: 50px;
+}
+
+.item-orders{
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-right: 0.2rem #f08080 solid;
+}
+
+.item-orders h2, 
+.item-comments h2{
+    color: #f08080;
+    /* margin-left: 0; */
+
+}
+
+.item-orders .item-info{
+    margin-left: 25px;
+    margin-bottom: 30px;
+}
+
+.item-info span{
+    margin-right: 5px;
+}
+
+.item-comments{
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+}

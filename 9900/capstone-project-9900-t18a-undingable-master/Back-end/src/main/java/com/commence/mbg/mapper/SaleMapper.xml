@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.commence.mbg.mapper.SaleMapper">
+  <resultMap id="BaseResultMap" type="com.commence.mbg.model.Sale">
+    <id column="SaleId" jdbcType="BIGINT" property="saleid" />
+    <result column="ProductId" jdbcType="BIGINT" property="productid" />
+    <result column="SaleNum" jdbcType="BIGINT" property="salenum" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    SaleId, ProductId, SaleNum
+  </sql>
+  <select id="selectByExample" parameterType="com.commence.mbg.model.SaleExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from Sale
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from Sale
+    where SaleId = #{saleid,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from Sale
+    where SaleId = #{saleid,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.commence.mbg.model.SaleExample">
+    delete from Sale
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.commence.mbg.model.Sale">
+    insert into Sale (SaleId, ProductId, SaleNum
+      )
+    values (#{saleid,jdbcType=BIGINT}, #{productid,jdbcType=BIGINT}, #{salenum,jdbcType=BIGINT}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.commence.mbg.model.Sale">
+    insert into Sale
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="saleid != null">
+        SaleId,
+      </if>
+      <if test="productid != null">
+        ProductId,
+      </if>
+      <if test="salenum != null">
+        SaleNum,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="saleid != null">
+        #{saleid,jdbcType=BIGINT},
+      </if>
+      <if test="productid != null">
+        #{productid,jdbcType=BIGINT},
+      </if>
+      <if test="salenum != null">
+        #{salenum,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.commence.mbg.model.SaleExample" resultType="java.lang.Integer">
+    select count(*) from Sale
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update Sale
+    <set>
+      <if test="record.saleid != null">
+        SaleId = #{record.saleid,jdbcType=BIGINT},
+      </if>
+      <if test="record.productid != null">
+        ProductId = #{record.productid,jdbcType=BIGINT},
+      </if>
+      <if test="record.salenum != null">
+        SaleNum = #{record.salenum,jdbcType=BIGINT},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update Sale
+    set SaleId = #{record.saleid,jdbcType=BIGINT},
+      ProductId = #{record.productid,jdbcType=BIGINT},
+      SaleNum = #{record.salenum,jdbcType=BIGINT}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.commence.mbg.model.Sale">
+    update Sale
+    <set>
+      <if test="productid != null">
+        ProductId = #{productid,jdbcType=BIGINT},
+      </if>
+      <if test="salenum != null">
+        SaleNum = #{salenum,jdbcType=BIGINT},
+      </if>
+    </set>
+    where SaleId = #{saleid,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.commence.mbg.model.Sale">
+    update Sale
+    set ProductId = #{productid,jdbcType=BIGINT},
+      SaleNum = #{salenum,jdbcType=BIGINT}
+    where SaleId = #{saleid,jdbcType=BIGINT}
+  </update>
+</mapper>

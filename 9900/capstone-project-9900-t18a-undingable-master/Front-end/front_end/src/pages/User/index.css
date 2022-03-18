@@ -1,0 +1,50 @@
+/* products */
+.user-container {
+  /* background-color: #fff; */
+  display: flex;
+}
+
+/* 信息内容 */
+h2{
+  margin-left: 25px;
+  padding: 20px 0 5px;
+  /* font-weight: 900; */
+}
+
+/* 用户信息样式 */
+.user-profile{
+  background-color: #fae0e4;
+  width: 50vw;
+  margin: 20px 20px 25px 0;
+  border-left: 0.2rem #f08080 solid;
+  box-shadow: 10px 10px 3px 1px rgba(0, 0, 0, .2);
+  height: 680px;
+}
+
+/* 用户订单样式 */
+.user-order {
+  background-color:#fff;
+  padding: 0 10px;
+  width: 50vw;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-left: 0.2rem #f08080 solid;
+  box-shadow: 10px 10px 3px 1px rgba(0, 0, 0, .2);
+  height: 680px;
+  font-weight: 500;
+}
+
+.user-form{
+  /* background-color:#fff; */
+  width: 80%;
+  font-weight: 500;
+}
+
+.prefixFlag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prefixFlag > span {
+  margin-left: 5px;
+}

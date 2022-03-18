@@ -1,0 +1,32 @@
+/* products */
+.AdminContainer{
+    display: flex;
+}
+
+/* 信息内容 */
+h2{
+    margin: 0;
+}
+
+/* item栏和user栏 */
+.item-list{
+    padding: 20px;
+    background-color: #fff;
+    width: 50vw;
+    margin: 20px 0 25px;
+    /* border: 0.5rem #fae0e4 outset; */
+    border-right: 0.2rem #f08080 solid;
+    /* border: 1px #f08080 solid; */
+    /* border-radius: 10px; */
+}
+.user-list{
+    padding: 20px;
+    background-color: #fff;
+    width: 50vw;
+    margin: 20px 0 25px;
+    /* border: 0.5rem #fae0e4 outset; */
+    /* border-right: 0.3rem #fae0e4 solid; */
+    /* border: 1px #f08080 solid; */
+    /* border-radius: 10px; */
+
+}

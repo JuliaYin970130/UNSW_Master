@@ -1,0 +1,31 @@
+version: "3.9"
+services:
+    db:
+        image: mariadb
+        volumes:
+            - ./db_data:/var/lib/mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: 123456
+            MYSQL_DATABASE: fragrance_commerce
+        # ports:
+        #     - 3306:3306
+
+    backend:
+        image: maven:3-adoptopenjdk-11
+        working_dir: /usr/src/app/Back-end
+        volumes:
+            - ./m2-cache:/root/.m2
+            - ./Back-end/docker/settings.xml:/root/.m2/settings.xml
+            - ./:/usr/src/app
+        command: mvn spring-boot:run
+        ports:
+            - 8080:8080
+
+    frontend:
+        image: node:14-slim
+        working_dir: /usr/src/app
+        volumes:
+            - ./Front-end/front_end:/usr/src/app
+        command: /usr/src/app/run.sh
+        ports:
+            - 3000:3000

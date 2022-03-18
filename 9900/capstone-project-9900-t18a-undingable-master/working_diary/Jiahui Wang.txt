@@ -1,0 +1,50 @@
+Week1:
+1. Form the group
+2. discuss the topic: E-commence and create the jira account
+3. discuss the structure of the project and create proposal-to-do-list
+
+Week2:
+1. start proposal
+    1.1. decide on the proposal objectives
+    1.2. decide on the sprints, stories and epics
+2. create latex for formal proposal and google-docs for drafts
+
+Week3:
+1. finish the proposal(half part of stores and epics/ objectives / Novel functions)
+2. create sprints and stories to Jira and write the project roadmap and backlog
+3. start to deal with the database and backend springboot structure
+
+week4
+1. As a Scrum Master, submit the proposal on behalf of the whole team.
+2. start coding the sprint1: function User login and register interface.
+3. create User table in the database and connect to the database, insert or select data using mybatis.
+
+week5:
+1. As a Scrum Master, attend Progressive Demo A and state the back-end structure.
+2. hold the meeting for Retrospective A, solve the problems in our system.
+3. continue coding for sprint 2: function Product(view all products).
+4. Create product table in the database.
+
+week6:
+flexible week!
+
+week7:
+1. As a Scrum Master, attend Retrospective A review and obtain comment on it, from which we will do better on Retrospective B.
+2. Finish product functions, which contains recommend system and product details page.
+3. talk with the front-end team members and solve the problems on connection with front-end.
+
+week8:
+1. As a Scrum Master, submit the Retrospective B to WebCMS and email tutor.
+2. Finish Questionnaire function: add delete and update questionnaire.
+3. Finish Shopping cart function: user can add, delete and update their shopping cart.
+
+Week9:
+1. Finish all coding and do some code review and code testing.
+2. Help Andy with the report and be responsible for description on recommend part.
+3. Prepare for the final demo presentation.
+
+week10:
+1. Finish on all projects and reports, prepare for submit.
+2. Do the final demo with recommendation part.
+3. Convert all jira tasks to Done!
+4. submit all files and Finish!

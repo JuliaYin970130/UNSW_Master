@@ -1,0 +1,59 @@
+Week1
+
+We have built a team for developing an e-commerce system. Our team create working proposal plan.
+The team setted our jira account.
+Our team design developing plan for front-end part, and organize page contents.  
+In proposal, the team clear front-end and back-end structure and plan to show it in proposal doc.
+
+Week2
+
+Finish first virsion proposal doc.
+After meeting a few times, the team divided into two groups for front-end and back-end.
+I am in front-end group. I participate drawing the work flow and draw prototypes.
+
+Week3
+
+We discussed all details in enginnering structure and recorrected unclear design.
+I write the software architecture figure.
+Finish the final virsion of proposal.
+
+Week4
+
+Add router, and add link to the existing pages
+Add axios and api base
+Completed basic register and login function
+
+Week5
+
+Tuesday's lab was progressive Demo A
+Add a defualt layout of our website sturcture.  
+Add questionnaire page.
+
+Week6
+
+Update some pages' ux, which including login, register and header
+Add and fix register page logic
+Adjust the connection between the front end and the back end, and now data can be transmitted stably
+
+Week7
+
+Add router link of item information page and homepage item card
+Supplement to search function
+Fix connection issue with backend
+Fix and adjust homepage layout
+
+Week8
+
+Fully complete the search function, which include two part:
+1. Fuzzy search for product names through the search bar
+2. Search for the desired product through the product category in the sidebar
+The content of the information detail page can be retrieved from the database
+The questionnaire function is completed, linked with the back-end recommendation system, and can update questionnarie later in user profile page.
+
+Week9
+
+implement shoping cart & checkout functions 
+implement user prodile update functions - add phone number and address
+implement delete comment function in item management page 
+Users view their order in user profile page and admin can view all orders in admin dashboard
+Users can rate and comment their order in evalution page.

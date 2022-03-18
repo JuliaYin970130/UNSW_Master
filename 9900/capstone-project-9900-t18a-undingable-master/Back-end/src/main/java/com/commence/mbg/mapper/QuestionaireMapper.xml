@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.commence.mbg.mapper.QuestionaireMapper">
+  <resultMap id="BaseResultMap" type="com.commence.mbg.model.Questionaire">
+    <id column="questionireId" jdbcType="BIGINT" property="questionireid" />
+    <result column="userId" jdbcType="BIGINT" property="userid" />
+    <result column="family" jdbcType="VARCHAR" property="family" />
+    <result column="forWho" jdbcType="VARCHAR" property="forwho" />
+    <result column="lowerPrice" jdbcType="BIGINT" property="lowerprice" />
+    <result column="HigherPrice" jdbcType="BIGINT" property="higherprice" />
+    <result column="brand" jdbcType="VARCHAR" property="brand" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    questionireId, userId, family, forWho, lowerPrice, HigherPrice, brand
+  </sql>
+  <select id="selectByExample" parameterType="com.commence.mbg.model.QuestionaireExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from Questionaire
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from Questionaire
+    where questionireId = #{questionireid,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from Questionaire
+    where questionireId = #{questionireid,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.commence.mbg.model.QuestionaireExample">
+    delete from Questionaire
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.commence.mbg.model.Questionaire">
+    insert into Questionaire (questionireId, userId, family, 
+      forWho, lowerPrice, HigherPrice, 
+      brand)
+    values (#{questionireid,jdbcType=BIGINT}, #{userid,jdbcType=BIGINT}, #{family,jdbcType=VARCHAR}, 
+      #{forwho,jdbcType=VARCHAR}, #{lowerprice,jdbcType=BIGINT}, #{higherprice,jdbcType=BIGINT}, 
+      #{brand,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.commence.mbg.model.Questionaire">
+    insert into Questionaire
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="questionireid != null">
+        questionireId,
+      </if>
+      <if test="userid != null">
+        userId,
+      </if>
+      <if test="family != null">
+        family,
+      </if>
+      <if test="forwho != null">
+        forWho,
+      </if>
+      <if test="lowerprice != null">
+        lowerPrice,
+      </if>
+      <if test="higherprice != null">
+        HigherPrice,
+      </if>
+      <if test="brand != null">
+        brand,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="questionireid != null">
+        #{questionireid,jdbcType=BIGINT},
+      </if>
+      <if test="userid != null">
+        #{userid,jdbcType=BIGINT},
+      </if>
+      <if test="family != null">
+        #{family,jdbcType=VARCHAR},
+      </if>
+      <if test="forwho != null">
+        #{forwho,jdbcType=VARCHAR},
+      </if>
+      <if test="lowerprice != null">
+        #{lowerprice,jdbcType=BIGINT},
+      </if>
+      <if test="higherprice != null">
+        #{higherprice,jdbcType=BIGINT},
+      </if>
+      <if test="brand != null">
+        #{brand,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.commence.mbg.model.QuestionaireExample" resultType="java.lang.Integer">
+    select count(*) from Questionaire
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update Questionaire
+    <set>
+      <if test="record.questionireid != null">
+        questionireId = #{record.questionireid,jdbcType=BIGINT},
+      </if>
+      <if test="record.userid != null">
+        userId = #{record.userid,jdbcType=BIGINT},
+      </if>
+      <if test="record.family != null">
+        family = #{record.family,jdbcType=VARCHAR},
+      </if>
+      <if test="record.forwho != null">
+        forWho = #{record.forwho,jdbcType=VARCHAR},
+      </if>
+      <if test="record.lowerprice != null">
+        lowerPrice = #{record.lowerprice,jdbcType=BIGINT},
+      </if>
+      <if test="record.higherprice != null">
+        HigherPrice = #{record.higherprice,jdbcType=BIGINT},
+      </if>
+      <if test="record.brand != null">
+        brand = #{record.brand,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update Questionaire
+    set questionireId = #{record.questionireid,jdbcType=BIGINT},
+      userId = #{record.userid,jdbcType=BIGINT},
+      family = #{record.family,jdbcType=VARCHAR},
+      forWho = #{record.forwho,jdbcType=VARCHAR},
+      lowerPrice = #{record.lowerprice,jdbcType=BIGINT},
+      HigherPrice = #{record.higherprice,jdbcType=BIGINT},
+      brand = #{record.brand,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.commence.mbg.model.Questionaire">
+    update Questionaire
+    <set>
+      <if test="userid != null">
+        userId = #{userid,jdbcType=BIGINT},
+      </if>
+      <if test="family != null">
+        family = #{family,jdbcType=VARCHAR},
+      </if>
+      <if test="forwho != null">
+        forWho = #{forwho,jdbcType=VARCHAR},
+      </if>
+      <if test="lowerprice != null">
+        lowerPrice = #{lowerprice,jdbcType=BIGINT},
+      </if>
+      <if test="higherprice != null">
+        HigherPrice = #{higherprice,jdbcType=BIGINT},
+      </if>
+      <if test="brand != null">
+        brand = #{brand,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where questionireId = #{questionireid,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.commence.mbg.model.Questionaire">
+    update Questionaire
+    set userId = #{userid,jdbcType=BIGINT},
+      family = #{family,jdbcType=VARCHAR},
+      forWho = #{forwho,jdbcType=VARCHAR},
+      lowerPrice = #{lowerprice,jdbcType=BIGINT},
+      HigherPrice = #{higherprice,jdbcType=BIGINT},
+      brand = #{brand,jdbcType=VARCHAR}
+    where questionireId = #{questionireid,jdbcType=BIGINT}
+  </update>
+</mapper>

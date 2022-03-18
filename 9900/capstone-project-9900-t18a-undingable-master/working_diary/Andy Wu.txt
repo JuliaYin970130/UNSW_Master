@@ -1,0 +1,62 @@
+Week1:
+Done: 1. form a group
+      2. discuss and choose the topic: E-commerence
+      3. choose a specific product: perfume
+      4. create Jira account
+To do: 1. proposal draft
+
+
+Week2:
+Done: 1. discuss our project objects
+      2. discuss our sprints
+      3. discuss our epics and users story
+To do: 1. write proposal users story part
+
+
+Week3:
+Done: 1. write epics and user stories part of proposal with Jiahui Wang
+      2. write novel function part of proposal with Jiahui Wang
+      3. draw figure 2.1 Story board
+To do: 1. Learn Java Spring boot frame
+       2. Work for dome1.
+   
+Week4:
+Done: 1. Work for backend log function
+      2. Learn log4j2 frame
+      3. Work for login interface
+To do: 1. MySQL setting
+       2. Complete dome1
+       
+Week5:
+Done: 1. Dome1 part
+      2. Swagger set
+      3. MySQL set and connect
+To do: 1. MySQL setting
+       2. Complete dome1.
+       
+Week6: Write Retrospective A report
+       
+       
+Week7:
+Done: 1. Work with Jiaqi Yin to connect front-end and back-end
+      2. Docker connection issue
+To do: 1. Retrospective B report
+       
+Week8:
+Done: 1. Write Retrospective B report
+      2. Complete page structure
+To do: 1. Final report
+      
+       
+Week9:
+Done: 1. Final report Functionalities part
+      2. Final report Challenge part
+      3. Discuss final dome
+      4. Divide the final demo content and order
+To do: 1. Fianl dome
+       2. Complete fianl report
+       
+Week10:
+Done: 1. Final report Manual part
+      2. Fianl report Figure1.2 and Figure1.3
+      3. Finish fianl report

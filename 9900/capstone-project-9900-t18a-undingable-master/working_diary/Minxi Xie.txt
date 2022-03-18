@@ -1,0 +1,47 @@
+Week1
+Group formed, our group name is Undingable, which means the workload in UNSW is heavy . 
+But it is good for all of us that it is the last term in our postgraduate life. Then, we selected Jiahui as our group's Scrum Master. 
+With the help of Rachid, we created our Jira accounts.
+After group forming, we chose E-commerce recommender system as our project and our products are related to fragrance. 
+At last, we discussed the structure of our proposal and what programming language and softwares we are going to use in our project.
+
+Week2
+We had review what we have done in week1. Then our group discussed what we need to include in our proposal.
+In the lab, Rachid displayed some good example to us, which is helpful for us to write a good proposal.
+At the end of the meeting, we discussed to divide the proposal into vary parts and everyone select a part they want. 
+In addition, we decided to have other meeting on this Friday and next Monday, which is to present the draft of the proposal and figure the improvement of it.
+Jiaqi and I are responsable for the background part. which is to do some research on some similar website and consider what elements should be included in our project.
+At the end of the week, we finish our part of the proposal on time.
+
+Week3
+During the lab, we presented our proposal to Rachid and wrote down the improvement suggested by him.
+Our team planed to add more details into the proposal according to Rachid's suggestion. 
+Since the proposal need to be submitted until week 4, our scrum master re-allocated the task to us, which are the improvement in the final version of the proposal. 
+We changed the work flow diagram, draw more prototype pictures in the proposal. Jiahui and I wrote down the sprint and add the task on the Jira website.
+
+week4
+This week we submitted our proposal. After the lab, we discussed to divided our project into 2 parts: backend and frontend. Jiaqi, Shuo and I chose the frontend part.
+And next week we are going to present the first demo. So Jiaqi and I built the web page, like home page, register and login page and questionaire page.
+
+week5
+It's the first demo during the lab time. All of us felt nervous, fortuately, Rachid did not have a big expectation to our first demo. But he still gave some suggestion to us,
+such as the color matching style on the page. So Jiaqi and I discussed the style after that, and we decided to use pink with white as the theme color of our webpage.
+In adddition, we continued to built more pages after this week.
+
+week7
+We presented Retrospective A this week during the lab time. Also, we presented some contribution of the project. Shuo connected the API between frontend and backend,
+the effect is awesome! Nice to see something dynamic based on the static web page. This week, I will build the cart page and evaluation page.
+
+week8
+Demo B presentation was held in the lab time. Some recommandation issues are needed to improve. 
+We are going to add more details on the page, since basic functions shown on the web page are finished.
+
+week9
+We presented Retrospective B this week during the lab time. It's a pity that we didn't remember what needed to be corrected last time, 
+but we heard from Rachid that our overall degree of completion is still good, but we still need to pay attention to some details.
+
+week 10
+It's a final demo presentation during the lab time. I am very excited to see that everyone's results can be displayed in a complete continuous demonstration.
+In these 10 weeks, our team members are very united, and solve the difficulties encountered one by one like a professional project team. This experience is really great.
+Thanks to our team members for their hard work during this period, and thanks to Rachid for his helpful suggestions on our project during this period.
+

@@ -1,0 +1,13 @@
+#quest-page{
+    background-color:#f8fbd7;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    /* padding-top: 20vh ; */
+    /* padding-left: 20vh ; */
+    margin: 15vh;
+    padding: 30px 30px 0;
+}
+
+#quest-btn-wrapper > * {
+    margin: 5px;
+}

@@ -1,0 +1,20 @@
+{
+    "message":"success",
+    "data":[{ 
+        "id":2,
+        "name":"Bitter Peach",
+        "brand":"Tom Ford",
+        "img_url":"../Image/2.jpg"
+    },{ 
+        "id":3,
+        "name":"Coco Mademoiselle",
+        "brand":"Chanel",
+        "img_url":"../Image/3.jpg"
+    },{ 
+        "id":4,
+        "name":"Omnia Crystalline",
+        "brand":"Bvlgari",
+        "img_url":"../Image/4.jpg"
+    }
+]
+}

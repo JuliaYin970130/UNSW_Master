@@ -1,0 +1,59 @@
+Week1
+
+The group was formed and we created our jira account.
+The group metting determined the project topic, and the sales products are fragrance. 
+We assigned front-end and back-end personnel and determined the structure of the proposal.
+
+Week2
+
+Write the draft of the proposal.
+There were two group meetings this week, which together determined the main functions and framework of the website.
+I completed the research and writing of the background part in the proposal.
+
+Week3
+
+The group meeting adjusts the details of the proposal and completes the proposal.
+I have supplemented and improved the System architecture part in the proposal.
+
+Week4
+
+Add new page: home, register, admin, user
+
+Week5
+
+Progressive Demo A
+
+Replace website UI by using Ant Design 
+UI and UX update: header component
+Update page content: User page - add questionnaire button
+
+Week6
+
+Flexible week
+
+Ant Desgin theme color update
+UI and UX update：home page, Admin page
+
+Week7
+
+Add new page:  Item information page, Search page
+Update page content: 
+1. home page - improvement based on search function
+2. admin - add function -  put on/off items from shelves.
+
+Week8
+
+Progressive demo B
+
+Add new page: Checkout page, Admin management page, Item management page
+Fix request form function - only registered user can send request form
+Update page content: questionnaire page - content is consistent with database
+
+Week9
+
+Fix some functions in admin page
+Assist in completing the report
+Update readme.md
+
+
+

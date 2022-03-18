@@ -1,0 +1,16 @@
+.input-form{
+    margin-left: 10px;
+    border: 1px #ddd solid;
+    height: 30px;
+    width: 300px;
+}
+
+.input-form:focus{
+    outline: 0;
+}
+
+.admin-info{
+    position: "absolute";
+    right: 0;
+    font: "16px"
+}

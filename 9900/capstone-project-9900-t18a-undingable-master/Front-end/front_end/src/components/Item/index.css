@@ -1,0 +1,49 @@
+/* 产品信息 */
+.item-card {
+    /* margin: 10px; */
+    list-style: none;
+    text-align: center;
+    background-color: #ffeaed;
+    margin: 10px;
+    width: 190px;
+    padding: 10px;
+    height: 350px;
+    position: relative;
+}
+.item-card p {
+    margin: 0;
+}
+/* 产品图 */
+.item-card img {
+    width: 170px;
+    height: 220px;
+}
+/* 产品信息区块 */
+.item-card > .item-info-block {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* 产品名 */
+.item-card .item-name {
+    margin-top: 3px;
+    color: #ff6781;
+}
+/* 品牌名 */
+.item-card .brand {
+    color: #776e6f;
+    font-family: "Times New Roman", Times, serif;
+}
+/* 销量 */
+.item-card .sale {
+    font-size: 12px;
+    color: #8f2d00;
+}
+/* 库存 */
+.item-card .stock {
+    font-size: 12px;
+    color: #b1b1b1;
+}

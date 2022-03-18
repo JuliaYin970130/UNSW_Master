@@ -1,0 +1,27 @@
+.search-item {
+  /* width: 100vw; */
+  margin-left: 120px;
+  padding: 20px;
+  
+}
+
+.empty {
+  /* background-color: #b1b1b1; */
+  /* margin: 0 auto; */
+  text-align: left;
+  width: 580px;
+  margin: 30px auto;
+}
+
+.empty h2 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.empty h3 {
+  color: #776e6f;
+}
+
+.empty h3 a {
+  color: #ff6781;
+}

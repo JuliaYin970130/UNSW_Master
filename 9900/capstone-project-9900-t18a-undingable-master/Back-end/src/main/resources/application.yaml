@@ -1,0 +1,13 @@
+server:
+    port: 8080
+
+spring:
+    datasource:
+        druid:
+            url: jdbc:mysql://db:3306/fragrance_commerce?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+            username: root
+            password: 123456
+
+mybatis:
+    mapper-locations:
+        - classpath*:com/**/mbg/mapper/*.xml
