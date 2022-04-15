@@ -1,0 +1,50 @@
+{
+    "message":"success",
+    "data":[{ 
+        "id":2,
+        "name":"Bitter Peach",
+        "brand":"Tom Ford",
+        "imgUrl":"../Image/2.jpg"
+    },{ 
+        "id":3,
+        "name":"Coco Mademoiselle",
+        "brand":"Chanel",
+        "imgUrl":"../Image/3.jpg"
+    },{ 
+        "id":4,
+        "name":"Omnia Crystalline",
+        "brand":"Bvlgari",
+        "imgUrl":"../Image/4.jpg"
+    },{ 
+        "id":5,
+        "name":"CK One",
+        "brand":"Calvin Klein",
+        "imgUrl":"../Image/5.jpg"
+    },{ 
+        "id":6,
+        "name":"J'adore",
+        "brand":"Dior",
+        "imgUrl":"../Image/6.jpg"
+    },{ 
+        "id":7,
+        "name":"Gucci Guilty Absolute",
+        "brand":"Gucci",
+        "imgUrl":"../Image/7.jpg"
+    },{ 
+        "id":8,
+        "name":"Shalimar Eau de Parfum",
+        "brand":"Guerlain",
+        "imgUrl":"../Image/8.jpg"
+    },{ 
+        "id":9,
+        "name":"Terre d'Hermes",
+        "brand":"HERMAS",
+        "imgUrl":"../Image/9.jpg"
+    },{ 
+        "id":10,
+        "name":"Sauvage",
+        "brand":"Dior",
+        "imgUrl":"../Image/10.jpg"
+    }
+]
+}

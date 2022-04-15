@@ -1,0 +1,15 @@
+{
+    "message":"success",
+    "data":[{ 
+        "id":6,
+        "name":"J'adore",
+        "brand":"Dior",
+        "img_url":"../Image/6.jpg"
+    },{ 
+        "id":10,
+        "name":"Sauvage",
+        "brand":"Dior",
+        "img_url":"../Image/10.jpg"
+    }
+]
+}
