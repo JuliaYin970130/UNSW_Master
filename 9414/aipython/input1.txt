@@ -1,0 +1,15 @@
+# test for basic situation
+# four unconstrained tasks that are all before a final task
+task wall1 15
+task wall2 15
+task wall3 15
+task wall4 15
+task roof 10
+# binary constraints
+constraint wall1 before roof
+constraint wall2 before roof
+constraint wall3 before roof
+constraint wall4 before roof
+# domain constraints
+domain wall1 starts-after 10
+domain roof starts-after 80

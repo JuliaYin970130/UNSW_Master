@@ -1,0 +1,18 @@
+# test for series of domain constraints
+# four unconstrained tasks that are all before a final task
+task wall1 10
+task wall2 15
+task wall3 15
+task wall4 10
+task roof 20
+# binary constraints
+constraint wall1 before roof
+constraint roof after wall2
+constraint wall3 before roof
+constraint roof after wall4
+# domain constraints
+domain wall1 starts-after 5
+domain wall2 between 10 30
+domain wall3 ends-in 45 50
+domain wall4 ends-before 60
+domain roof starts-after 10

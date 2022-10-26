@@ -1,0 +1,24 @@
+# add more kinds of task and test for serise of constraint
+# four unconstrained tasks that are all before a final task
+task foundation 15
+task wall1 10
+task wall2 15
+task wall3 12
+task wall4 10
+task roof 20
+task painting 5
+# binary constraints
+constraint foundation before wall1
+constraint wall1 after wall2
+constraint wall2 starts wall3
+constraint wall3 ends wall4
+constraint wall4 meets roof
+constraint roof overlaps painting
+# domain constraints
+domain foundation starts-before 5
+domain wall1 starts-after 5
+domain wall2 ends-before 30
+domain wall3 ends-after 15
+domain wall4 starts-in 5 20
+domain roof ends-in 30 60
+domain painting between 40 60

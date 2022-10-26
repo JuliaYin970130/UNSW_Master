@@ -1,0 +1,22 @@
+# seven constrained tasks to test all kinds of binary constraints and domain constraints (test all functionality)
+task wall1 10
+task wall2 15
+task wall3 12
+task wall4 10
+task wall5 13
+task wall6 6
+task wall7 20
+# binary constraints
+constraint wall1 before wall2
+constraint wall3 after wall2
+constraint wall4 meets wall7
+constraint wall5 starts wall4
+constraint wall7 ends wall3
+constraint wall6 during wall5
+# domain constraints
+domain wall1 starts-after 5
+domain wall7 starts-after 10
+domain wall6 starts-after 13
+domain wall3 starts-in 35 40
+domain wall4 ends-in 28 30
+domain wall5 between 16 35

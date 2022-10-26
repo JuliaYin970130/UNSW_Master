@@ -1,0 +1,6 @@
+wall1:10
+wall2:0
+wall3:0
+wall4:0
+roof:80
+cost:155

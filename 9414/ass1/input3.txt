@@ -1,0 +1,23 @@
+# four sequential tasks follwed by two parallel tasks, the sequential tasks must be completed only when the previous task is completed. Once all the sequential tasks are completed, the parallel tasks can run parallelly
+task wall1 10
+task wall2 15
+task wall3 12
+task wall4 10
+task wall5 20
+task wall6 15
+# binary constraints
+constraint wall2 after wall1
+constraint wall2 before wall3
+constraint wall4 after wall3
+constraint wall5 after wall1
+constraint wall5 after wall2
+constraint wall5 after wall3
+constraint wall5 after wall4
+constraint wall6 after wall1
+constraint wall6 after wall2
+constraint wall6 after wall3
+constraint wall6 after wall4
+# domain constraints
+domain wall1 starts-before 10
+domain wall5 ends-before 99
+domain wall6 ends-before 99
